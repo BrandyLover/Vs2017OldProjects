@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game1 Sprite Batch", "Game1 Sprite Batch\Game1 Sprite Batch.csproj", "{7F946712-C912-41A8-855E-FDA78004D2DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F946712-C912-41A8-855E-FDA78004D2DA}.Debug|x86.ActiveCfg = Debug|x86
+		{7F946712-C912-41A8-855E-FDA78004D2DA}.Debug|x86.Build.0 = Debug|x86
+		{7F946712-C912-41A8-855E-FDA78004D2DA}.Release|x86.ActiveCfg = Release|x86
+		{7F946712-C912-41A8-855E-FDA78004D2DA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF4F0A29-59F7-41B7-8273-1ABF1EB69873}
+	EndGlobalSection
+EndGlobal

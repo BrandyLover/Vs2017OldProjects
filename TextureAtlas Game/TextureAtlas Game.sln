@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextureAtlas Game", "TextureAtlas Game\TextureAtlas Game.csproj", "{052F4AEC-6F09-49B0-A636-7226AC490160}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{052F4AEC-6F09-49B0-A636-7226AC490160}.Debug|x86.ActiveCfg = Debug|x86
+		{052F4AEC-6F09-49B0-A636-7226AC490160}.Debug|x86.Build.0 = Debug|x86
+		{052F4AEC-6F09-49B0-A636-7226AC490160}.Release|x86.ActiveCfg = Release|x86
+		{052F4AEC-6F09-49B0-A636-7226AC490160}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E294049-EF97-4753-A122-009B001F4071}
+	EndGlobalSection
+EndGlobal
