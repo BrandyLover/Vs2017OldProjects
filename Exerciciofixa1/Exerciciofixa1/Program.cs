@@ -1,39 +1,50 @@
 ﻿using System;
 using System.Globalization;
+using System.Collections.Generic;
 
-namespace Exerciciofixa1 {
-    class Program {
-        static void Main(string[] args) {
-            Conta conta;
-            Console.Write("Digite o número da conta: ");
-            string numeroConta = Console.ReadLine();
-            Console.Write("Digite o nome do titular da conta: ");
-            string nomeConta = Console.ReadLine();
-            Console.Write("Haverá depósito inicial (s/n)? ");
-            double depositoIni;
-            if(Console.ReadLine() == "s") {
-                Console.Write("Digite o valor do depósito inicial: ");
-                depositoIni = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                conta = new Conta(int.Parse(numeroConta), nomeConta, depositoIni);
+namespace Exerciciofixa1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Employee> employees = new List<Employee>();
+
+            Console.Write("How many employees will be registered? ");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++)
+            {
+                Console.WriteLine("Employee #" + i + ":");
+                Console.Write("Id: ");
+                int id = int.Parse(Console.ReadLine());
+                Console.Write("Name: ");
+                string name = Console.ReadLine();
+                Console.Write("Salary: ");
+                double salary = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                employees.Add(new Employee(id, name, salary));
+                Console.WriteLine();
             }
-            else {
-                conta = new Conta(int.Parse(numeroConta), nomeConta);
+
+            Console.Write("Enter the employee id that will have salary increase : ");
+            int searchId = int.Parse(Console.ReadLine());
+
+
+            Employee emp = employees.Find(x => x.Id == searchId);
+            if (emp != null)
+            {
+                Console.Write("Enter the percentage that the salary will be increased by: ");
+                emp.IncreaseSalary(double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture));
             }
-            Console.WriteLine("Conta Criada:");
-            Console.WriteLine(conta);
+            else
+                Console.WriteLine("Id not found");
 
-            Console.WriteLine("Digite um valor para depósito: ");
-            conta.depositoConta(double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture));
-            Console.WriteLine("Conta Atualizada:");
-            Console.WriteLine(conta);
-
-            Console.WriteLine("Digite um valor para saque: ");
-            conta.saqueConta(double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture));
-            Console.WriteLine("Conta Atualizada:");
-            Console.WriteLine(conta);
-
+            Console.WriteLine("Updated list of employees:");
+            foreach (Employee employee in employees)
+            {
+                Console.WriteLine(employee);
+            }
             Console.ReadLine();
-
         }
     }
 }
